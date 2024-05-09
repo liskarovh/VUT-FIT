@@ -1,0 +1,10 @@
+Zadání viz vzor
+
+2023/2024
+
+Hodnocení: 
+-0.25:Referenční body v textu sázeny 'na tvrdo' nebo nestandardním způsobem (správně: \label)
+-0.25:Odkazy na referenční body sázeny 'na tvrdo' nebo nestandardním způsobem (správně: \ref)
+-0:dělení odstavců je lepší dělat pomocí nových řádků než příkazem \par (z hlediska čitelnosti kódu) --> 38:    \par
+-0.5:použity pevné mezery (vspace, hspace, quad, apod.) --> 23:\date{\vspace{-3ex}} %opomen
+0.5: korekce: tvrdé mezery použity pouze u sázení titulní části dokumentu a/nebo namísto prostředí quotation
