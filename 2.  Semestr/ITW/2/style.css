@@ -1,0 +1,793 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html { 
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/*vytvoření navigačního menu na levé straně stránky*/
+.sidenav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 16%;
+    background-color: #1a1919; 
+    overflow:hidden;
+    padding-top: 2%;
+    border-right: 1px solid rgb(82, 82, 82);
+    
+}
+
+#nav_menu_links{
+    display: block;
+}
+
+.sidenav nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/*Profilová fotka umístěná nad navigací*/
+.profile_pic { 
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding: 35%;  
+    background-image: url('attachements/profile_pic.webp');
+    background-size: contain; 
+    background-repeat: no-repeat;  
+    background-position: center; 
+    border-radius: 50%;
+}
+
+.sidenav nav ul li {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lucida Console', monospace;
+    color: #fff;
+    padding: 6%;
+}
+
+
+
+.sidenav nav ul li a {
+    font-size: clamp(14px, 1.9vh, 2vh);
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+.sidenav nav ul li a:hover {
+    background-color: #555;
+}
+
+
+
+/*Jiné stylování pro jméno*/
+.navigation_box nav > ul > li > a:first-child{
+    font-size:clamp(18px, 2.9vh, 3vh);  
+    font-weight: bolder;   
+}
+
+#first li{
+    padding: 10%;
+}
+
+.navigation_box img{
+    display:none;
+}
+
+/*Stylování samotného obsahu stránky*/
+.content-container {
+    margin-left: 16%;
+    width: 84%;
+    text-align: left;
+    align-items: center;
+    background-color: rgb(32, 32, 32);
+    font-size: clamp(14px, 2.2vh, 2.5vh);
+    color: #ffffffa9;
+}
+.content{
+    
+    padding-left: 12%;
+    padding-right: 12%;
+}
+
+/*Umístění zápatí pod navigační menu*/
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #1a1919;
+    color: #fff;
+    padding: 10px 20px;
+    height: 10%;
+    width: 16%;
+    text-align: center;
+    padding-bottom: 5%;
+    margin-bottom: 10px;
+    border-right: 1px solid rgb(82, 82, 82);
+}
+
+.footnote {
+    font-size: 14px;
+    
+}
+
+.footnote img {
+    width: 10%;
+    
+    margin-right: 10%;
+    vertical-align: middle;
+    display: inline-block;
+}
+
+footer p {
+    font-size: 14px;
+    padding-bottom: 3%;
+    padding-top: 3%;
+}
+
+
+p{
+    padding: 1%;
+}
+
+.nav_section {
+    min-height: 100vh;
+    padding-bottom: 15%;
+    padding-top: 15%;
+    border-bottom: 1px solid rgb(82, 82, 82);
+
+    
+}
+
+h2, h3, h4{
+    font-weight: bolder;
+    font-family: 'Lucida Console', monospace;
+    color: #ffffffee;
+    text-transform: uppercase;
+    padding: 3%;
+    padding-left: 0%;
+
+}
+
+/*Nastavení písma relativní k výšce stránky*/
+h2{
+    font-size: clamp(22px, 8vh, 9vh);
+}
+
+h3{
+    font-size: clamp(18px, 4.5vh, 5vh);
+
+}
+h4{
+    font-size: clamp(14px, 2.5vh, 3vh);
+
+}
+
+/*Zobrazení divu contact links do dvou sloupců, každý po 2 divech
+Zobrazení ikony sociální sítě vedle nadpisu h3 a textu*/
+.contact_links{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding-top: 2%;
+}
+
+.contact_links img{
+    width: 20%;
+    float: left;
+    padding-right: 10%;
+}
+.contact_links div{
+    padding: 5%;
+    padding-left: 0%;
+    padding-top: 0%;
+    
+}
+.contact_links p{
+    margin-left: 20%;
+    clear: both;
+    padding: 0%;
+}
+
+.collumn_1{
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+.collumn_2{
+    flex-basis: 50%;
+    flex-direction: column;
+}
+
+/*podsekce form*/
+fieldset{
+    padding: 2%;
+    padding-left: 4%;
+    margin-top: 2%;
+}
+legend{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.form label{
+    padding: 2%;
+    padding-bottom: 0%;
+}
+
+.form p{
+    padding-top: 0%;
+    margin-top: 0%;
+}
+
+input[type=text], textarea{
+    width: 96%;
+    padding: 2%;
+    margin: 2%;
+    box-sizing: border-box;
+    background-color: rgb(82, 82, 82);
+    color: white;
+    border: 1px solid #ffffffa9;
+}
+
+textarea {
+    height: clamp(80px, 15vh, 20vh);
+}
+
+textarea:hover, [type=text]:hover{
+    background-color: rgb(118, 118, 118);
+}
+
+input[type=radio]{
+    padding: 2%;
+    margin: 4%;
+    margin-top: 2%;
+    transform: scale(3);
+}
+
+/*Stylování submit buttonu*/
+button{
+
+    margin: 3%;
+    padding: 3%;
+    background-color: #512982;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-family: 'Lucida Console', monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 20%;
+    min-width: fit-content;
+    float: right;
+    font-size: clamp(14px, 1.8vh, 6vh);
+    color: #fff;
+}
+
+button:hover {
+    border: 1vh solid #1a1919;
+    background-color: #0056b3;
+}
+
+
+
+/*zoprazení sekce pastimes*/
+.pastimes_div{
+    display:block;
+}
+
+/*Zobrazení jednotlivých pastimes vedle sebe*/
+.pastimes_container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+
+/*každý pastimes má zobrazenou ikonu na levo, obtékanou textem a zaoblený obrázek pod textem*/
+.past {
+    flex-basis: 50%; 
+    box-sizing: border-box;
+    padding: 2%; 
+}
+
+.past img{
+    width: 80%;
+    border-radius: 15%;
+    padding-left: 0%;
+}
+.past img:first-of-type {
+    width: 20%;
+    float: left;
+    padding-bottom: 10%;
+    padding-right: 5%;
+}
+.past p{
+    padding-bottom: 5%;
+}
+
+/*nastavení rozložení videí - 2 sloupce vedle sebe s čárkovaným oddělením a mezery mezi nimi*/
+.videos_wrapper p{
+    font-size: clamp(14px, 1.9vh, 2vh);
+}
+
+.videos_layout{
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.videos_layout iframe {
+    width:50%;
+    height: 30vh;
+    padding: 2%; 
+    border: 3px dashed rgb(82, 82, 82);
+}
+
+/*Sekce about*/
+/*Nastavení sekce na 100% výšky obrazovky - kvůlisprávnému zobrazení pozadí*/
+.about{
+    margin: 0%;
+    display: block;
+    background-image: url("attachements/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat; 
+    background-size: cover;
+
+    width: 100%;
+    padding-left: 12%;
+    padding-right: 12%;
+    height: 100vh;
+    color: white;
+    padding-top: 15%;
+    
+}
+.about p{
+    padding-top: 0%;
+    width:70%;
+}
+
+.about h2{
+    padding-bottom: 0%;
+}
+
+/*sekce expririence*/
+.expirience_div{
+    display: block;
+}
+
+/*podsekce education*/
+.education{
+    display: block;
+    padding-bottom: 5%;
+}
+
+/*Stalování pomocí gridu do 2 sloupců a 3 řad*/
+.edu {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 5%; 
+    grid-template-rows: auto;
+    padding-bottom: 7%;
+}
+
+.edu img{
+    grid-column: 2;
+    grid-row: 3;
+    width: 30%;
+}
+
+/*edu h4 zabírá všechny sloupce gridu*/
+.edu h4 {
+    grid-column: 1 / -1; 
+}
+  
+.edu p {
+    grid-column: 1;
+}
+
+.edu p:first-child { /*Zajištění umístění prvního řádku prvního odstavce na stejný řádek jako datum studia*/
+    grid-row: 2;
+}
+  
+.edu span {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+/*podsekce thesis*/
+/*Umístění obrázků napravo textu, obtékané textem*/
+
+.download img{
+    width:20%;
+    float: right;
+    padding: 4%;
+    padding-bottom: 0%;
+    padding-top: 0%;
+}
+
+.download p{
+    padding-bottom: 5%;
+}
+
+.buttons {
+    text-align: center;
+}
+  
+.buttons div{
+    display: inline-block;
+    margin: 3%;
+    padding: 3%;
+    background-color: #512982; /* Button background color */
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    font-family: 'Lucida Console', monospace;
+    text-transform: uppercase;
+    font-weight: bold;
+    width: 30%;
+    min-width: fit-content;
+}
+
+.buttons div a{
+    text-decoration: none;
+    color: #fff;
+}
+  
+.buttons div:hover {
+    border: 1vh solid #1a1919;
+    background-color: #0056b3;
+}
+
+/*sekce services*/
+
+.list ul{
+    margin-left: 2%;
+    padding: 3%;
+}
+
+.list li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+.list img {
+    width: 4%;
+    margin-right: 2%;
+    max-height: 5%;
+
+}
+
+.services_div a{
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Lucida Console', monospace;
+    cursor: pointer;
+    color: #512982;
+}
+
+.services_div a:hover{
+    background-color: #9b7d9fbb;
+}
+
+/*implicitní zobrazení je pro větší monitory, notebooky*/
+
+
+
+@media only screen and (min-width: 481px) and (max-width: 1023px){ /*pro tablety*/
+    /*přesunutí navigace se strany na horní část obrazovky*/
+    .sidenav{
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+    }
+    #nav_menu_links{
+        display: none;
+    }
+    .content-container{
+        margin-left: 0%;
+        width: 100%;
+    }
+    .profile_pic {
+        display: none;
+    }
+
+    .sidenav a{
+        padding: 3%;
+        display: block;
+    }
+
+    .sidenav ul li{
+        padding: 0%;
+    }
+
+    .navigation_box nav > ul > li > a:first-child{
+        padding: 0%; 
+        margin:0%
+    }
+    #first li{
+        padding: 5%;
+    }
+
+    #nav_menu_links li{
+        padding: 0%;
+    }
+    
+    .navigation_box a.a_picture{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 5%;
+        margin-right: 3%;
+        padding: 5%;
+    }
+    .navigation_box img{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    #nav_menu_links a:hover{
+        background-color: rgb(118, 118, 118);
+    }
+
+    .a_picture:hover{
+        background-color: rgb(100, 100, 100);
+    }
+
+    /*přesunutí zápatí*/
+
+    footer{
+        position: static;
+        height: fit-content;
+        width: 100%;
+        border-top: 1px solid rgb(82, 82, 82);
+        border-right: none;
+    }
+
+    .footnote img{
+        width: 7%;
+    }
+    footer p{
+        font-size: clamp(16px, 1.9vh, 2vh);;
+    }
+
+    /*Přizspůsobení šířky sloupců v sekci education*/
+    .edu {
+        grid-template-columns: 80% 20%;
+        grid-template-rows: auto;
+        padding-bottom:10%;
+    }
+    .edu img{
+        width:100%
+    }
+
+    /*změna zobrazení videí v sekci pastimes*/
+    .videos_layout{
+        display: block;
+        width:100%;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .videos_layout iframe{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 3%;
+    }
+
+    /*přizspůsobení about sekce*/
+
+    
+    .about{
+        margin-top: 10%;
+    }
+    .about p{
+        width: 90%;
+        padding-top: 5%;
+    }
+
+
+}
+
+
+@media only screen and (max-width: 480px){ /*pro telefony*/
+    
+    /*přesunutí navigačního menu na vrchol obrazovky*/
+    
+    .sidenav{
+        width: 100%;
+        height: fit-content;
+        overflow: hidden;
+    }
+    #nav_menu_links{
+        display: none;
+    }
+    .content-container{
+        margin: 0%;
+        min-width: 100%;
+    }
+    .profile_pic {
+        display: none;
+    }
+
+    .sidenav a{
+        padding: 3%;
+        display: block;
+    }
+
+    .sidenav ul li{
+        padding: 0%;
+    }
+
+    .navigation_box nav > ul > li > a:first-child{
+        padding: 0%; 
+        margin:0%
+    }
+    #first li{
+        padding: 5%;
+    }
+
+    #nav_menu_links li{
+        padding: 0%;
+    }
+    
+    .navigation_box a.a_picture{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-top: 5%;
+        margin-right: 3%;
+        padding: 5%;
+    }
+    .navigation_box img{
+        width: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+    }
+
+    #nav_menu_links a:hover{
+        background-color: rgb(118, 118, 118);
+    }
+
+    .a_picture:hover{
+        background-color: rgb(100, 100, 100);
+    }
+
+    /*přesunutí zápatí*/
+
+    footer{
+        position: static;
+        height: fit-content;
+        width: 100%;
+        border-top: 1px solid rgb(82, 82, 82);
+        border-right: none;
+    }
+
+    .footnote img{
+        width: 7%;
+    }
+    footer p{
+        font-size: clamp(16px, 1.9vh, 2vh);;
+    }
+
+    /*Přizspůsobení šířky sloupců v sekci education*/
+    .edu {
+        grid-template-columns: 80% 20%;
+        grid-template-rows: auto;
+        padding-bottom:15%;
+    }
+    .edu img{
+        width:100%
+    }
+
+    /*změna zobrazení videí v sekci pastimes*/
+    .videos_layout{
+        display: block;
+        width:100%;
+        align-items: center;
+        padding: 3%;
+    }
+
+    .videos_layout iframe{
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+        padding-top: 3%;
+    }
+
+    /*přizspůsobení about sekce*/
+
+    
+    .about{
+        margin-top: 10%;
+    }
+    .about p{
+        width: 90%;
+        padding-top: 5%;
+    }
+    
+    /*Zorazení pastimes pod sebou*/
+    .pastimes_container{
+        display: block;
+
+    }
+
+    .past img{
+        padding-bottom: 15%;
+        padding-right: 7%;
+    }
+
+    /*Úprava chceck radia v form*/
+    input[type=radio]{
+        transform: scale(1.5);
+    }
+
+    h1, h2, h3, h4, p{
+        word-break: break-word;
+    }
+
+    /*Změna výpočtu velikosti písma nadpisu na šířku obrazovky - celkově jiné rozložení obrazovky vyžaduje změnu*/
+    h2{
+        font-size: clamp(24px, 12vw, 15vw);
+    }
+    
+    h3{
+        font-size: clamp(20px, 9vw, 10vw);
+    
+    }
+    h4{
+        font-size: clamp(16px, 6vw, 8vw);
+    
+    }
+
+    p{
+        font-size: clamp(14px, 3vw, 4vw);
+    }
+
+    .contact_links h4{
+        font-size: clamp(14px, 4vw, 6vw);
+    }
+
+    button{
+        font-size: clamp(14px, 3vw, 6vw);
+    }
+
+    .buttons{
+        font-size: clamp(14px, 3vw, 6vw);
+    }
+
+}
+
+
+
