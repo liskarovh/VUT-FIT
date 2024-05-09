@@ -1,2 +1,2 @@
 # VUT-FIT
-VUT FIT projekty
+Úložiště projektů dělaných v rámci studia VUT FIT v Brně.
