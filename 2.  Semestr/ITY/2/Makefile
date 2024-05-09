@@ -1,7 +1,7 @@
 # K suboru: proj1.tex
 # Datum:    22.2.2024
-# Autor:    Jiri Pavela (ipavela@fit.vutbr.cz)
-# Projekt:  ITY projekt 1
+# Autor:    Jiri Pavela (ipavela@fit.vutbr.cz), upraveno by liskarovh
+# Projekt:  ITY projekt 2
 
 PROJ=proj2
 
