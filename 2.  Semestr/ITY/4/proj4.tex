@@ -1,0 +1,70 @@
+\documentclass[a4paper, 11pt]{article}
+
+\usepackage[czech]{babel} %importování balíčku pro češtinu
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{times}
+\usepackage{url}
+\usepackage[hidelinks]{hyperref}
+
+
+\usepackage[left=20mm,text={170 mm, 240mm},top=30mm]{geometry} %nastavení okrajů stránky
+\urlstyle{same}
+
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+            \Huge{\textsc{Vysoké učení technické v Brně}}\\ %[0.5em]
+            \huge{\textsc{Fakulta informačních technologií}}\\
+        
+        \vspace{\stretch{0.382}}
+        \LARGE{Typografie a publikování\,--\,4. projekt}\\
+        \Huge{Citace}
+    \vspace{\stretch{0.618}}
+    \end{center}
+    {\Large{\today \hfill Hana Liškařová}}
+\end{titlepage}
+
+\section{\LaTeX\ a jeho základní využití}
+
+\subsection{Co je \LaTeX ?}
+
+\LaTeX\ je soubor instrukcí a~komplexních příkazů jazyka pro počítačovou sazbu \TeX. \LaTeX\ umožňuje a~usnadňuje sazbu diplomových prací, článků, matematických výrazů, prezentací, vědeckých textů, knih atd. V \LaTeX ovém kódu se pomocí instrukcí definuje způsob zoprazení textu a~definování formátování dokumentů. Více informací o~definici \LaTeX u a~co ho odlišuje od~\TeX se lze dočíst v~\cite{Kopka2004}.
+
+Díky své flexibilitě, rozsáhlým balíčkům a~schopnosti generovat profesionálně vypadající dokumenty, je LaTeX populární mezi vědeckými pracovníky, studenty, technickými spisovateli a~dalšími, kteří potřebují vytvářet složité dokumenty s~matematickými vzorci, obrázky, tabulkami a~dalšími složitými prvky. 
+
+\LaTeX\ je otevřený software, k~dispozici je tedy zcela zdarma. Po~instalaci ho lze používat přímo lokálně na~vlastním počítači (o~procesu instalace blíže pojednává \cite{It_network}) nebo v online editoru.
+
+\subsubsection{Online editory \LaTeX u}
+Existuje celá řada online editorů pro \LaTeX . Naprostá většina z~nich jsou open-source editory. Oproti offline editorům mají rovnou několik výhod: 
+
+\begin{itemize}
+    \item Automatické zálohování: Cloudové úložiště, které často nabízí online editory LaTeXu, umožňuje uživatelům automaticky zálohovat své dokumenty a~mít k~nim přístup odkudkoli a kdykoli.
+    \item Rychlý náhled a~kompilace: Mnoho online editorů LaTeXu poskytuje rychlý náhled živých dokumentů a~okamžitou kompilaci, což usnadňuje proces psaní a editace.
+    \item Spolupráce a~sdílení: Mnoho online editorů LaTeXu poskytuje funkce pro~sdílení dokumentů a~spolupráci v~reálném čase, což umožňuje uživatelům pracovat na~projektech společně s~ostatními a~sdílet svou práci snadno.
+    \item Integrace s rozšířujícími službami. 
+\end{itemize}
+Mezi populární online editory patří například: Overleaf, \TeX maker nebo \TeX nicCenter aj. viz \cite{Sokol2012}. Podrobnější informace o~online editorech se lze dočíst v~\cite{top_editors}.
+
+\subsection{Výhody sazby v systému \LaTeX}
+\LaTeX\ vyniká obrovskou přesností, vypadá profesionálně a~je velmi intuitivní. Pro rozsáhlé dokumenty s matematickými vzorci, obrázky, či tabulkami a~odkazy v~textu je výhodnější použít \LaTeX . O~dalších výhodách pojednává \cite{Latexove_speciality}.
+
+
+\subsection{Matematická sazba}
+Naprosté základy matematické sazby i~pokročilejší funkce popisuje například \cite{AMS1995}. Novinkami a~vylepšením v~matematické sazbě se zabývá \cite{IJITS2023} nebo \cite{CSTUG}.
+
+
+\subsection{Sazba kvalifikačních prací}
+Díky profesionálnímu vzhledu vytvořených dokumentů a~vysoké kvalitě typografie je \LaTeX\ čatso používán k~tvorbě kvalifikačních prací. \LaTeX\ snadno implementuje požadavky univerzit na~formátování či~styl a~umožňuje snadnou správu citací a~vytváření seznamu literatury. Problematikou sazby diplomových prací se hlouběji zabývá \cite{Bojko2011}.
+Podrobnější informace o sázení citací obsahuje \cite{Gratzer2007}.
+
+\newpage
+
+\bibliographystyle{czechiso}
+\renewcommand{\refname}{Literatura}
+\bibliography{proj4}
+
+ 
+\end{document}
