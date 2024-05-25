@@ -1,0 +1,118 @@
+Zadání bylo moc težký a nebyl čas, skip.
+
+Cílem projektu je vyzkoušet si základní znalosti jazyka CSS, jednotlivých CSS pravidel a schopnost aplikovat různé typy CSS selektorů.
+
+
+Všeobecné vlastnosti webové prezentace
+šířka stránky se musí plynule přizpůsobit šířce okna prohlížeče:
+minimální: 768px (při nižších velikostech je možné zobrazit horizontální scrollbar)
+maximální: 1200px (při vyšších velikostech bude stránka zarovnána na střed okna prohlížeče)
+nejedná se o responzivní dokument, který by byl optimalizovaný na různá zařízení; není proto potřebné (a tedy ani povolené) používat media queries
+horní, spodní odsazení sekce: zpravidla 100px, 160px (mimo header a footer)
+použitá písma:
+Spectral - základní - věškerý text
+Calistoga - logo, podnadpis h2
+Textile - nadpisy
+Font Awesome 6 Free - ikony
+Font Awesome 6 Brands - ikony
+pozn.: soubor index.html již obsahuje import vybranch písem z Google Fonts; písmo Textile je v adresáři fonts/
+velikosti písem:
+základní:
+velikost písma (menší): 16px
+větší:
+20px (1.25rem) - reference, ikonky ve videu, navigace, .name, cena v #services, blockquote
+24px (1.5rem) dodatečný popisek v nadpise druhé úrovně
+další velikosti odvoďte
+mezera mezi písmeny nadpisu h2 druhé úrovně: 0.2rem
+základní použité barvy:
+#333333: základní šedá
+green: dekorace 1
+lightgreen: dekorace 1 světlejší
+#cce6c2: dekorace 1 světlá
+lightpink: dekorace 2 světlejší
+#f7ced3: dekorace 2 světlá
+black: výrazná
+white: výrazná inverzní
+doba animace: .5s
+neprůhlednost elementů (opacity): většinou .9, .8, ale někdy i menší (odhadněte)
+zvětšení obrázku při najetí myši: zpravidla o 10px na každou stranu
+Některé výše zmíněné vlastnosti mohly být přetížené v jednotlivých částech dokumentu.
+
+header (záhlaví)
+header-title
+výška odpovídá výšce viewportu
+velikosti písma řešte pouze přibližně
+typy:
+hledejte tzv. Parallax Scrolling
+studujte tzv. Pseudoelementy CSS
+pro absolutní pozicování vůči rodiči
+studujte mimo jiné vlastnosti background-*, position, animation, text-shadow, transform a funkci scale()
+header-menu
+typy:
+studujte CSS Grid
+studujte tzv. Pseudoelementy CSS
+#about
+video přehrávač implementujte v přibližné podobě
+typy:
+studujte tzv CSS Image Sprites
+pro fullscreen studujte vlastnost position
+pro layout ovládacích prvků studujte CSS Grid
+pro absolutní pozicování vůči rodiči
+studujte princip knihovny Font Awesome
+studujte selekci elementů dle hodnot atributů
+dále studujte mimo jiné vlastnosti: text-shadow, opacity, border-radius, visibility, z-index a, transform funkci rotate()
+#team
+výška obrázků: 300px
+minimální šířka sloupečku 250px
+typy:
+studujte CSS Grid, funkce repeat() a minmax()
+studujte Flexbox a vlastnost order
+dále mimo jiné studujte vlastnosti: object-fit, transition, opacity
+#events
+šířka obrázků: 40%
+typy:
+studujte tzv CSS Image Sprites
+studujte pseudotřídu :nth-child
+studujte princip plovoucích elementů
+dále mimo jiné studujte vlastnosti: transition, opacity transform funkci rotate()
+#menu
+výška a šířka mřížky (resp. buněk) se rovnají
+světlá barva rgb(238, 238, 238)
+typy:
+studujte pseudotřídu :nth-child
+studujte CSS Grid a vlastnost grid-template-areas
+studujte Flexbox a vlastnost flex-direction
+studujte, jak udělat tvary v CSS
+studujte tzv. Pseudoelementy CSS
+pro absolutní pozicování vůči rodiči
+dále mimo jiné studujte vlastnosti: aspect-ratio, transition, opacity
+#services
+typy:
+vlastnost display u tabulky a jejich prvků může být přetížena
+studujte tzv. Pseudoelementy CSS
+studujte pseudotřídu :not()
+pro absolutní pozicování vůči rodiči
+dále mimo jiné studujte vlastnosti: transition, box-shadow, opacity, background-*, z-index
+#contact
+mezera mezi obrázkem a formulářem: 40px
+mezera mezi vstupy formuláře 20px
+vycpávka vstupu formuláře: 10px
+výška obrázku: 400px
+typy:
+studujte CSS Grid
+studujte selekci elementů dle hodnot atributů
+studujte Pseudotřídy CSS
+dále mimo jiné studujte vlastnosti: transition, opacity
+footer
+velikost obrázku: 25%, zbytek odhadněte
+typy:
+studujte mimo jiné vlastnosti background-*
+#heyoooo
+velikost: 300px, 120px
+odsazení zvrchu: 80px -> 40px
+výška obrázku: 80%
+zaoblení okrajů: 20px
+#sweatshop
+odsazení zprava: 20px
+odsazení zespodu: 10px
+vycpávka: 15px 20px
