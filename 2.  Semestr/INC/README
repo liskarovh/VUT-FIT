@@ -1,0 +1,14 @@
+Projekt do inc.
+ZADÁNÍ:
+
+HODNOCENÍ:
+18/20 
+5;0+2+2+2+2;5;
+
+bodový zisk na 4 základní části ve formátu "B;a1+a2+a3+a4+a5;D;P".
+
+Celkově 20 bodů bylo rozděleno v poměru:
+(B)asic= 5b základní test správné funkcionality (zcela identický testovací případ jako zveřejněný test.zip),
+(A)dvanced= 10b za pět testů po 2b pro různé pokročilé situace (a1. dvě slova hned za sebou, a2. nestabilní DIN na hranách baudů, a3. vysílaní DIN na o 3% zpomalených hodinách, a4. vysílání DIN na o 3% zrychlených hodinách, a5. kombinace všeho),
+(D)oc= 5b dokumentace s popsaným RTL schématem, FSM grafem a snímkem simulace,
+(P)enalty= záporná penalizace za pozdní odevzdání a/nebo nedodržení formátu odevzdání.
