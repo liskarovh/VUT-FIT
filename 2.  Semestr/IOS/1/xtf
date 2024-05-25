@@ -1,0 +1,455 @@
+#! /bin/bash 
+
+POSIXLY_CORRECT=yes
+
+
+# v zadání filtr=přepínač
+
+#načtení logů z vstupu
+user=""
+command=""
+logs=()
+
+user_logs=()
+
+after_date=""
+before_date=""
+currency=()
+
+check_for_command=false
+check_user=false
+commands_entered=0
+f_a_entered=0
+f_b_entered=0
+
+#fce na výpis erroru
+error() {
+    echo $@ >&2
+    exit 4 #exit error
+}
+
+#zavedení přepínače pro zadané příkazy
+for ((i=1 ; i <= $# ; i++)) #krok po kroku zjištění argumentů
+do
+    arg="${!i}"
+    case "$arg" in
+        -h|--help) #vypíše nápovědu pro program
+            echo "This is a help manual for the xtf program, used to quicly browse through your crypto records. Below you can see the possible commands and their usage."
+            echo "COMMAND can be one of the following:"
+            echo "  list - listing of records for a specific user." 
+            echo "  list-currency - listing of a sorted list of currencies." 
+            echo "  status - listing of the actual account balance grouped and sorted by individual currencies." 
+            echo "  profit - listing of the customer's account balance with included fictional profit."
+            echo "  -h or --help - displays a manual"
+            echo "You can also enter a filter to narrow down the results of your search, you can use filters."
+            echo " FILTER can be a combination of the following:"
+            echo "  -a DATETIME - after: only records after this date and time are considered (excluding it). DATETIME is in the format YYYY-MM-DD HH:MM:SS."
+            echo "  -b DATETIME - before: only records before this date and time are considered (excluding it)."
+            echo "  -c CURRENCY - only records corresponding to the given currency are considered."
+            exit
+            ;; 
+
+
+        -a) #After day time
+            let "i++"
+            after_date_arg="${!i}" #uložení dnu 
+            
+            after_date_check=$(date "+%Y-%m-%d %H:%M:%S" -d "${after_date_arg}" 2> /dev/null) #rozdělené datum
+            is_valid=$? #pokud je exit code 0, vše ok, jinak not ok -error hláška
+
+            if [ $is_valid -ne 0 ]
+            then
+                error "Invalid date argument entered."
+            fi
+            after_date=$(date -d "${after_date_arg}" +%s)
+
+            let "f_a_entered++"
+            ;;
+        -b) #Before day time
+            let "i++"
+            before_date_arg="${!i}" #uložení dnu
+             
+
+            before_date_check=$(date "+%Y-%m-%d %H:%M:%S" -d "${before_date_arg}" 2> /dev/null) #rozdělené datum
+            is_valid=$? #pokud je exit code 0, vše ok, jinak not ok -error hláška
+
+            if [ $is_valid -ne 0 ]
+            then
+                error "Invalid date argument entered."
+            fi
+            before_date=$(date -d "${before_date_arg}" +%s)
+
+            let "f_b_entered++"
+            ;;
+        -c) #Currency
+            let "i++"
+            currency+=("${!i}") #uložení měny
+             #extra shift, aby se posunulo přes měnu
+            ;;
+
+        list-currency|status|profit|list) #zadaný jakýkoliv command
+            command="${!i}"
+            check_for_command=true
+            let "commands_entered++"
+            ;;
+
+        *) #zadaný uživatel či log
+            if [ $check_user = false ] #kontroluje či byl v minuosti zadaný uživatel, pokud ne, bere záznam jako uživatele, pokud ano, bere záznam jako log
+            then
+                if [ $check_for_command = false ] #kontroluje jestli byl zadán jakýkoliv příkaz, pokud ne, nastaví list
+                then
+                    #zachovat se podle list - žádný argument před tím, zadán uživatel
+                    command="list"
+                    user="${!i}"
+                    check_user=true
+                    let "commands_entered++"
+                    
+                else
+                    #zadan uživatel, už předtím určený command
+                    #MOŽNÁ COMMAND ="LIST" TU
+                    user="${!i}"
+                    check_user=true
+                fi
+            else
+                #zadaný log, uživatel již předtím zadán
+                logs+=("${!i}")
+            fi
+            ;;    
+    esac
+done
+
+
+#Ověření správného počtu proměnných
+if [[ $commands_entered -ne 1 ]]
+then
+    error "Conflicting commands entered."
+fi
+
+if [[ $f_a_entered -gt 1 ]]
+then
+    error "More than one after date filter entered."
+fi
+
+if [[ $f_b_entered -gt 1 ]]
+then
+    error "More than one before date filter entered."
+fi
+
+
+#VÝPIS proměnných
+# echo "----------"
+# echo "command - $command"
+# echo "after_date - $after_date"
+# echo "before_date - $before_date"
+# echo "currencies "${currency[@]}
+# echo "user - $user"
+# echo "logs entered - "${logs[@]}
+
+
+
+for filename in "${logs[@]}"
+do
+
+    #kontroluje, jestli existují jednotlivé soubory s logy
+    if [ ! -e "$filename" ]
+    then
+        error "Error: File '$filename' not found in directrory."
+    fi
+
+    #kontroluje zda soubor s logy není zazipovaný, pokud je, unzipuje ho
+    if [[ $filename == *.gz ]]
+    then
+        if [ -e "${filename: :-3}" ] #pokud už existuje rozzipovaný soubor se stejným jménem ale bez .gz - čerpej z něj
+        then
+            filename=${filename: :-3}
+        else
+            gunzip -k "$filename" #rozzipuje daný log
+
+            filename=${filename: :-3} #odebere 3 poslední znaky z zip souboru
+            gzip_to_rm="$filename" #proměnná na odstranění rozzipovaného souboru - úspora místa
+        fi
+        
+    fi
+
+
+    IFS=$'\n'
+    while read -r line
+    do 
+
+        IFS=';' read -ra parts <<< "$line" #rozdělený řádek podle ;
+
+        #kontrola že má každý řádek správný počet argumentů
+        if [ ${#parts[@]} != 4 ]
+        then
+            error "Wrong number of arguments in log file line."
+        fi
+
+
+        for part in "${parts[@]}"
+        do
+            if [ ${#part} == 0 ]
+            then
+                error "File incomplete, missing logs."
+            fi
+        done
+
+        if [ ${#parts[2]} != 3 ]
+        then
+            error "Currency in log file does not exist - invalid lenght."
+        fi
+
+        date_parsed_check=$(date "+%Y-%m-%d %H:%M:%S" -d "${parts[1]}" 2> /dev/null) #rozdělené datum
+        is_valid=$? #pokud je exit code 0, vše ok, jinak not ok -error hláška
+
+        if [ $is_valid -ne 0 ]
+        then
+            error "Wrong date format detected in log files."
+        fi
+        date_parsed=$(date -d "${parts[1]}" +%s)
+
+
+           
+        #kontrola, že existuje before_date - délka je větší než 1
+        if [ ${#before_date} != 0 ]
+        then
+
+            if [ $date_parsed -ge $before_date ] #přeskočení zapsání nevalidních dat nevalidních dat
+            then
+                continue
+            fi
+
+        fi
+
+        #kontrola, že existuje after_date
+        if [ ${#after_date} != 0 ]
+        then
+
+            if [ $date_parsed -le $after_date ] #přeskočení zapsání nevalidních dat nevalidních dat
+            then
+                continue
+            fi
+
+        fi
+
+        
+
+
+
+        if [ ${#currency[@]} != 0 ] #pokud existuje nějaká filtrovaná měna 
+        then
+            check_currency_in_array=false #kontroluje že daná proměnná je v poli
+
+            for curr in "${currency[@]}" #pro každou měnu zadanou z filtrů
+            do
+                
+                if [ "${curr}" == "${parts[2]}" ] #pokud se měna shoduje s 3. záznamem na řádku v logu - měnou
+                then
+                    check_currency_in_array=true #měna je v filtru
+                    break
+                fi
+                    
+            done
+
+            if [ $check_currency_in_array == false ] #tady možná bude true, idk, Přeskočení zápisu nevalidních dat
+            then
+                continue
+
+            fi
+
+        fi
+
+
+        if [ "${user}" != "${parts[0]}" ] #zkontroluje jestli se rovná user s jménem uživatele v logu, pokud ne, přeskočí zapsání
+        then
+            continue
+        fi
+
+                #vyfiltrovat tradera - done     
+                #rozříznout řádek podle ; - done
+                #zkontrolovat jestli nějaká hodnota nechybí "" -done
+                #zkontrolovat že měna má 3 znaky - done
+                #zkontrolovat jestli je datum validní - done
+
+                #zkontrolovat jestli je měna z filtrů v poli měn, nebo jstli je fltr na měny prázdný - všechny měny -done
+                #zkontrolovat zdy je datum v rozmezí - za a apřed b -done
+
+
+
+        user_logs+=("$line") #zápis vyfiltrovaných dat do user_logs se kterými se pracuje dál - zápis je v klasickém formátu logu
+
+    done < "$filename"
+
+    #odstranění unzip souboru
+    if [ "${#gunzip_to_rm}" -gt 0 ]
+    then
+        rm "$gunzip_to_rm"
+    fi
+done
+
+
+#rozlišení toho jaký mám command
+#for loop co bude procházet 
+#list = vypsat user logs
+#list - currencies - kontrolovat a házet do pole měn
+#status - posčítat měny pro daného člověka
+
+case "$command" in #podle toho jaký byl načten command
+    
+    list) #logy v user_logs už jsou vyfiltrované, stačí vypsat
+        #možný problém s tím že není každé na jiném řádku
+        
+        for log in "${user_logs[@]}" #vytiskne každý log na nový řádek
+        do
+            echo "$log"
+        done
+        ;;
+    
+    list-currency)
+        currencies=()
+
+        for log in "${user_logs[@]}" #projití řádek po řádku user logů
+        do
+
+            IFS=';' read -ra parts <<< "$log" #rozparsovaný řádek jednotlivého logu
+            
+
+            
+
+            if [[ ${currencies[@]} =~ ${parts[2]} ]] #pokud už currencies měnu obsahuje
+            then
+                continue #přeskočení zápisu
+
+            else
+                currencies+=("${parts[2]}") #přidání do pole
+            fi
+
+
+        done
+
+        readarray -td '' currencies_sorted < <(printf '%s\0' "${currencies[@]}" | sort -z) #seřadí měny abecedně
+
+        for s_currency in "${currencies_sorted[@]}" #vytiskne měnu každou na nový řádek
+        do
+            echo "$s_currency"
+        done
+        ;;
+
+    status|profit) #vypsání zůstatku pro každou měnu
+        used_currencies=()
+        money_values=()
+        index=0
+        sum=0
+
+        for log in "${user_logs[@]}" #projití řádek po řádku user logů
+        do
+
+            IFS=';' read -ra parts <<< "$log" #rozparsovaný řádek jednotlivého logu
+
+            if [[ ${used_currencies[@]} =~ ${parts[2]} ]] #pokud už used_currencies měnu obsahuje
+            then
+                #najít index měny v used_currencies
+                for currency in "${!used_currencies[@]}"
+                do
+                    if [[ "${used_currencies[$currency]}" = "${parts[2]}" ]]
+                    then
+                        index=$currency; #zjištený index měny v poli měn
+                    fi
+                done
+
+
+                #na stejném indexu v money_values bude hodnota měn
+
+                #sečtení aktuální hodnoty měny s nově načtenou hodnotou
+                sum=$(echo "${parts[3]} + ${money_values[$index]}" | bc -l)
+                money_values[$index]=$sum #uložení nové hodnoty zpět do matice
+
+                #postupně se opakuje log po logu
+
+            else
+                used_currencies+=("${parts[2]}") #přidání měny do pole měn
+                money_values+=("${parts[3]}") #přidání hodnoty měny na stejný index
+            fi
+        done
+
+
+        #sjednocení do jednoho pole a srovnání podle abecedy
+
+        IFS=$'\n' sorted_currencies=($(sort <<<"${used_currencies[*]}")) #seřadí abecedně měny
+        unset IFS
+
+        #vytvoří mapu indexů z normálního na seřazený z used_currencies
+        declare -A index_map
+        for i in "${!used_currencies[@]}"
+        do
+            index_map["${used_currencies[$i]}"]=$i
+        done
+
+        #vytvoří nové pole sorted_money_values a seřadí do něj monay_values
+        sorted_money_values=()
+        for item in "${sorted_currencies[@]}"
+        do
+            sorted_money_values+=("${money_values[${index_map[$item]}]}")
+        done
+        #v tomto bodě jsou seřazené jména i hodnoty
+        #zavedení nového přepínače, který rozhodne zda se vytiskne jen status, nebo se ještě spočítá profit
+        case "$command" in
+            status)
+                #tisk každé měny a její hodnoty
+                for index in "${!sorted_currencies[@]}"
+                do
+                    currency="${sorted_currencies[$index]}"
+                    money_value=$(echo "scale=4; ${sorted_money_values[$index]}"| bc -l) #upravení čísel na max 4 desetinná místa
+                    printf "%s : %s.%.4s\n" "$currency" $( echo $money_value | tr '.' ' ' )
+                done
+                ;;
+
+            profit)
+                profit=0
+                profit_values=()
+                #nutné zvýšit veškeré hodnoty v sorted_money_values o XTF_PROFIT
+
+                #přístup k XTF_PROFIT
+
+                #!/bin/bash
+
+                # kontrola, jestli byla dána hodnota profitu, pokud ne, nastavení na 20%
+                if [ -z "$XTF_PROFIT" ]
+                then
+                    profit=20
+                else
+                    profit=$XTF_PROFIT
+                fi
+
+
+                #převedení profitu na hodnotu vhodnou k násobení sorted_money_values
+                profit=$(echo "$profit/100 + 1" |bc -l)
+
+                #násobení každé KLADNÉ položky v sorted_money_values
+                #pokud je číslo záporné, zůstává stejně
+
+                for money_value in "${sorted_money_values[@]}"
+                do
+                    if (( $(echo "$money_value > 0" | bc -l) ))
+                    then
+                        with_profit=$(echo "$money_value * $profit" | bc -l)
+                        profit_values+=("$with_profit")
+                    else
+                        profit_values+=("$money_value")
+                    fi
+                done
+
+
+                #tisk výsledného seznamu hodnot s měnou, navýšené o profit
+                for index in "${!sorted_currencies[@]}"
+                do
+                    currency="${sorted_currencies[$index]}"
+                    money_value=$(echo "scale=4; ${profit_values[$index]}"| bc -l)
+                    printf "%s : %s.%.4s\n" "$currency" $( echo $money_value | tr '.' ' ' )
+                done
+
+                ;;
+        esac
+        ;;    
+
+esac
+
