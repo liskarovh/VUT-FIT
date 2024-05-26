@@ -1,1 +1,58 @@
-Popis - TÝMOVÝ PROJEKT
+TÝMOVÝ PROJEKT
+
+ZADÁNÍ:
+Co bude obsahovat odevzdání každého z projektů
+1. Titulní list
+Titulní list bude obsahovat alespoň následující údaje:
+FIT VUT v Brně / FP VUT v Brně
+Úvod do softwarového inženýrství
+2020/2021
+Projekt IUS / Projekt USIN
+Číslo zadání projektu
+Název zadání projektu
+Jméno a login autorů
+Datum odevzdání
+Titulní list může vypadat například takto: title-page.doc (title-page.pdf).
+2. Vlastní řešení projektu
+
+Společně v týmu vypracujte následující diagramy na zadání, které si zvolíte prostřednictvím e-learningu VUT. Seznam jednotlivých zadání je níže na této stránce.
+Model případu užití
+ER diagram
+Diagram tříd
+Sekvenční diagram
+Diagram komunikace
+Stavový diagram
+Model případů užití
+První částí projektu je vypracovat model případů užití.
+
+Diagram případů užití by měl být na jednu stranu formátu A4, měl by obsahovat více než jednoho aktéra a sadu případů užití. Případy užití volte dostatečně rozdílné, aby bylo poznat, že modelu a jeho smyslu rozumíte. V případě použití include/extend relací si dejte pozor na jejich správnou aplikaci.
+
+Dobrou volbou případů užití dáváte najevo, že problematice rozumíte, zatímco volbou příliš podobných případů užití (např. vytvořit, změnit a zrušit objednávku) ukazujete, že si příliš jisti nejste a navíc si chcete ušetřit práci.
+ER diagram
+Pomocí ER diagramu se modelují perzistentní data a vztahy mezi nimi. Jedná se o vyšší úroveň dat (abstrakci), která jsou v systému uložena a mohou být dále zpracovávána.
+
+Perzistentní data v informačním systému zůstávají, i po vypnutí systému. ER diagram je základem pro návrh schématu databáze (hlaviček jednotlivých tabulek). Tvoření databázového systému si prakticky vyzkoušíte v předmětu IDS.
+
+Při vypracovávání ER diagramu si dejte pozor, abyste opravdu modelovali data v klidu (při nepochopení ER diagramu, tj. modelování dynamické práce s daty, se může rapidně zhoršit hodnocení.
+Diagram tříd
+Není nutné modelovat celý systém. Nicméně v modelované části musí být v souladu s ER diagramem a diagramem případů užití (viz níže).
+Sekvenční diagram a diagram komunikace
+Modelujte sekvenci/komunikaci s minimálně 3 objekty a 5 voláními metod. Oba diagramy musí být v souladu s diagramem tříd a diagramem případu užití.
+Stavový diagram
+Modelujte stavový diagram s alespoň 4 stavy.
+Konzistence jednotlivých modelů
+Všechny modely musí splňovat funkcionalitu a být konzistentní, to znamená mimo jiné:
+Názvy entitních a vztahových množin ER diagramu musí korespondovat se jmény v názvech a popisech případů užití.
+Ke každému případu užití musí existovat vhodné entitní množiny, se kterými se manipuluje: Například pokud mám případ užití Zadat novou žádost, musím mít v ER diagramu entitní množinu, která obsahuje údaje o zadaných žádostech.
+Naopak ke každé entitní množině by měl existovat případ užití, který přidá/mění/maže položky příslušné entitní množiny: Pokud mám například entitní množinu Uživatel, je nutnou součástí modelu případu užití možnost správy uživatelů.
+Názvy tříd a metod v diagramu tříd, sekvenčním diagramu a diagramu komunikace musí být v souladu.
+Ke každému případu užití musí existovat vhodná metoda v diagramu tříd, která tento UC provádí.
+Naopak každá metoda, která předpokládá uživatelský vstup, by měla odpovídat nějakému UC.
+Pokud je sekvence akcí iniciována nějakým případem užití, ten musí být v diagramu případu užití. Stejně tak každé volání metody musí odpovídat příslušné metodě v diagramu tříd.
+
+
+56. Cech Zlodějů
+Cech zlodějů chce zefektivnit svoji práci a zadal výběrové řízení na vytvoření informačního systému pro evidence krádeží a loupeží. Zloději udávají své reálné jméno (někteří jsou však bezejmenní), úředně potvrzenou přezdívku (např. Vilda Dlouhoprsťák), věk, stav (mrtvý, živý), vypsanou odměnu, a navíc vlastní řadu vybavení, které jsou různých typů (zbraně, náčiní, pasti,.), pro které musí být důkladně proškolení. Školení se rovněž vztahuje na typy zločinů, přičemž u každého typu nás zajímají detaily, míry obtížnosti provedení/proškolení. Vybavení se může dědit a předávat dál (např. v případě smrti), přičemž evidujeme od kdy do kdy zloděj dané vybavení vlastnil. Z důvodu regulace zločinu ve městě se vydávají povolení (či poukázky) na provedení zločinu určitého typu. Tyto poukázky se uplatňují na konkrétní zločin, u kterého navíc evidujeme, ve kterém rajónu byl proveden a jakou kořist poskytl. Daný zločin pak mohlo provést více zločinců. Každý zloděj eviduje své rajóny, ve kterých se pohybuje, přičemž může mít více rajónů. Evidujte rovněž základní informace o rajónech, jako je pozice, počet lidí, kapacita zlodějů (tzn. kolik se jich tam uživí), celkově dostupné bohatství a pod. Systém pravidelně tiskne žebříček nejlepší zlodějů, podle míry provedených zločinů během měsíce, i podle absolutního počtu kořistí.
+
+HODNOCENÍ
+	14,75 / 16,00
