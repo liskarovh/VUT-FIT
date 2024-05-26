@@ -1,1 +1,24 @@
-Popis
+ZADÁNÍ
+Odevzdaná domácí úloha bude obsahovat ER diagram (Entity Relationship Diagram)
+Pomocí ER diagramu se modelují perzistentní data a vztahy mezi nimi. Jedná se o vyšší úroveň dat (abstrakci), která jsou v systému uložena a mohou být dále zpracovávána.
+
+Perzistentní data v informačním systému zůstávají, i po vypnutí systému. ER diagram je základem pro návrh schématu databáze (hlaviček jednotlivých tabulek). Tvoření databázového systému si prakticky vyzkoušíte v předmětu IDS (studenti FIT) nebo DFM (studenti FP).
+
+Při vypracovávání ER diagramu si dejte pozor, abyste opravdu modelovali data v klidu (při nepochopení ER diagramu, tj. modelování dynamické práce s daty, se může rapidně zhoršit hodnocení). Modelování dynamiky se typicky projeví při pojmenovávání vztahů mezi entitními množinami jako "edituje", "prohlíží si", "zadává" atd.
+Opakujeme: jde o data, která zůstávají v systému i po jeho vypnutí. Atributy entitních množin by měly být atomické (již nedělitelné). Pakliže máte atribut, jenž by měl složitý datový typ, rozmyslete se, zda by nebylo lepší modelovat ho jako entitní množinu.
+
+Vztahy jsou v ER diagramu vyjádřeny čarami mezi entitními množinami, cízí klíče (primární klíče jiných entitních množin) se tudíž mezi atributy dáné entitní množiny nenachází. Tyto se vyskytují až v databázových tabulkách při implementaci v rámci databázového systému. Při návrhu ER diagramu je nutné správně porozumět konceptu kardinality vztahů. Při použití vztahu 1:1..N (oproti vztahu 1:0..N) je třeba mít dobrý důvod pro to, aby musela existovat minimálně jedna entita z entitní množiny na pravé straně, která je ve vztahu s entitou na levé straně. Vztahy 1:1 jsou podezřelé, protože takové entity množiny je možné sloučit do jedné--ve většině případů se jedná o chybu. Vztah n:n je sice při implementaci do tabulek problematický, ale v ER diagramech být může. Není ani chybou, pokud se již v ER diagramu převede přes vazební entitní množinu na dva vztahy 1:n (pozor ale na správnou orientaci kardinalit - kardinalita n je v obou případech na straně vazební entitní množiny).
+
+9: Nadílka
+Konzultant: doc. Rogalewicz
+Mezinárodní asociace bytostí nadělujících dárky se rozhodla sledovat a vyhodnocovat výkonnost svých členů. Vás požádala o vytvoření ER diagramu, který by sloužil jako základ informačního systému pro monitorování nadělených dárků (IS MAD). Kromě jména nadělující bytosti, které můžete považovat za unikátní, bude v IS MAD evidován původ bytosti (bůh, člověk, zvíře, ostatní), ve kterých státech (v jednom státě může nadělovat dárky více bytostí, přičemž existují státy, které žádnou nadělující bytost nemají), jaký den v roce a jakým způsobem bytost dárky naděluje.
+Jednotlivým naděleným dárkům IS MAD přidělí jednoznačné číslo dárku a dále zaznamená název, druh a popis dárku, nadělující bytost (pokud se na nadílce žádná bytost nepodílela, pak osobu či osoby, od kterých dárek je), pro koho byl dárek určen (dárek může dostat i více osob), datum nadílky a kde byl dárek nadělen. Každá osoba při narození získává jedinečné osobní číslo, které je v IS MAD uchováváno společně s jejím jménem, příjmením, datem narození, pohlavím, státní příslušností (počítejte s možností vícenásobného občanství) a s adresami, na kterých pobývá. Adresu v rámci státu (každý stát má svoji unikátní zkratku, oficiální a hovorový název) určuje poštovní směrovací číslo (PSČ), číslo popisné a číslo bytu. Pro lepší orientaci jsou tyto údaje obvykle doplněny o název obce (nebo městské části či městského obvodu), ulici a číslo orientační.
+
+HODNOCENÍ:
+9.5/12 
+PK pro adresu je slozeny: PSC+cislo domu+cislo bytu -0.5
+
+Chybne kardinality u vazebni EM Akceptor/Donor -1
+
+Pouzivani cizich klicu jako atributu. -1
+vice v hodnoceni.pdf
