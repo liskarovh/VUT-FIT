@@ -1,0 +1,63 @@
+Testováno na evě, v 206ext je ogicky teoreticky vše správně ale je problém s next()
+
+Zadání:
+
+Vaším úkolem je doplnit těla funkcí v souborech c201.c, c203.c, c206.c a c206-ext.c a tyto čtyři soubory následně odevzdat prostřednictvím STUDISu (nezabalené a v kódování v UTF-8).
+
+Správnost Vašich implementací si můžete částečně ověřit pomocí základních testovacích aplikací (např. c201-test.c), pro jejichž překlad máte předpřipraveny i soubory Makefile (make all, make clean, make run). Pozn.: do hlaviček funkcí ani do předpřipravených hlavičkových souborů, prosím, nezasahujte!
+
+
+HODNOCENÍ:
+Vážená studentko, vážený studente,
+
+zasílám Vám veškeré informace relevantní pro hodnocení 1. domácí úlohy z předmětu Algoritmy. Tyto informace by Vám měly především pomoci odhalit chyby, které vedly k případné bodové ztrátě.
+
+Pokud je některý ze souborů *.out prázdný nebo výpis končí uprostřed testu, je to způsobeno tím, že příslušný test při hodnocení zhavaroval a část výpisu byla ztracena, protože se ještě nedostala z vyrovnávací paměti na disk. Pokud nejsou některé *.out soubory vůbec přiloženy, pravděpodobně to znamená, že se Vaše řešení nepodařilo přeložit. Hodnocení probíhalo na serveru eva.fit.vutbr.cz, kde se projevují některé chyby, které se na jiných počítačích projevit nemusí (např. chyba při alokaci paměti pro ukazatel namísto pro prvek seznamu). Při hledání příčin, které vedly ke ztrátě bodů, si proto své řešení zkuste nejdříve přeložit a spustit právě na tomto serveru.
+
+Prosím také, abyste si přiložené soubory pečlivě prostudovali dříve, než-li začnete své hodnocení reklamovat. Reklamace jsou možné v časech 08:00–11:00 22. 10. 2024 v kanceláři C305. Pečlivě si prostudujte níže přiložené hodnocení Vašeho řešení a v případě, že jste někde udělali chybu, prosím, ponaučte se z ní. Dodatečné opravy ovlivňující funkcionalitu řešení domácí úlohy nebudou akceptovány. Pokud jste odhalili chybu v opravení Vaší úlohy, neváhejte na reklamaci dorazit. V případě jakýchkoliv dalších dotazů mne neváhejte kontaktovat. Děkuji za pochopení.
+
+Bodovací tabulka
+Níže je tabulka, která udává vztah mezi úspěšnými testy a body získanými za jednotlivé úlohy. Výsledné hodnocení se řídí výhradně těmito vztahy.
+
+Poměr úspěšných testů  	Poměr bodového zisku
+alespoň  99.00 %
+100.00 %
+alespoň  95.00 %
+75.00 %
+alespoň  90.00 %
+25.00 %
+alespoň  85.00 %
+10.00 %
+alespoň   0.00 %
+0.00 %
+Bodové hodnocení
+Vaše výsledné hodnocení následuje v tabulce níže:
+
+Testovací program  	  Výsledky testů
+(úspěšné/celkem)	  Výsledné body
+(získáno/celkem)
+c201/test	
+16/16 = 100.00 %
+1.00/1.00 b.
+c201/test-advanced	
+29/31 =  93.55 %
+0.25/1.00 b.
+c203/test	
+12/12 = 100.00 %
+1.00/1.00 b.
+c203/test-advanced	
+19/19 = 100.00 %
+1.00/1.00 b.
+c206/test	
+25/25 = 100.00 %
+1.00/1.00 b.
+c206/test-advanced	
+48/52 =  92.31 %
+0.50/2.00 b.
+c206-ext/test	
+ 2/ 4 =  50.00 %
+0.00/1.00 b.
+c206-ext/test-advanced	
+ 3/ 8 =  37.50 %
+0.00/2.00 b.
+Celkem bodů	4.75/10.00 b
