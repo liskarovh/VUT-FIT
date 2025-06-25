@@ -1,0 +1,32 @@
+
+attributes {
+    vzdalenost : kratka stredni dlouha
+    cena : nizka stredni vysoka
+    eko : nizka stredni vysoka
+    cas : malo stredne hodne
+}
+
+classes {
+    Auto
+    MHD
+    Kolo
+    Chuze
+}
+
+objects {
+    1 Chuze stredni vysoka nizka stredne
+    2 MHD dlouha nizka stredni hodne
+    3 Kolo stredni stredni nizka malo
+    4 Chuze dlouha stredni nizka hodne
+    5 Kolo kratka stredni vysoka hodne
+    6 Chuze dlouha nizka vysoka hodne
+    7 Chuze stredni nizka nizka malo
+    8 Chuze stredni nizka stredni malo
+    9 Chuze stredni vysoka nizka malo
+    10 Kolo dlouha stredni stredni stredne
+    11 MHD dlouha vysoka nizka stredne
+    12 Kolo stredni vysoka vysoka malo
+    13 Kolo kratka nizka vysoka malo
+    14 Kolo dlouha stredni stredni hodne
+    15 MHD dlouha stredni nizka stredne
+}
