@@ -4,3 +4,6 @@
 [submodule "4. Semestr/ICS"]
 	path = 4. Semestr/ICS
 	url = https://github.com/liskarovh/Playlist-Manager.git
+[submodule "4. Semestr/IVS/2"]
+	path = 4. Semestr/IVS/2
+	url = https://github.com/petrvitula/ivs_project.git
