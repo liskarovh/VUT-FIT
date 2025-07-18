@@ -1,0 +1,1528 @@
+Start testing: Mar 06 04:12 CET
+----------------------------------------------------------
+1/55 Testing: EmptyTree.InsertNode_SingleElement
+1/55 Test: EmptyTree.InsertNode_SingleElement
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=EmptyTree.InsertNode_SingleElement" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTree.InsertNode_SingleElement" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTree.InsertNode_SingleElement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTree
+[ RUN      ] EmptyTree.InsertNode_SingleElement
+[       OK ] EmptyTree.InsertNode_SingleElement (0 ms)
+[----------] 1 test from EmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTree.InsertNode_SingleElement" end time: Mar 06 04:12 CET
+"EmptyTree.InsertNode_SingleElement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+2/55 Testing: EmptyTree.DeleteNode_NonExistentElement
+2/55 Test: EmptyTree.DeleteNode_NonExistentElement
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=EmptyTree.DeleteNode_NonExistentElement" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTree.DeleteNode_NonExistentElement" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTree.DeleteNode_NonExistentElement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTree
+[ RUN      ] EmptyTree.DeleteNode_NonExistentElement
+[       OK ] EmptyTree.DeleteNode_NonExistentElement (0 ms)
+[----------] 1 test from EmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTree.DeleteNode_NonExistentElement" end time: Mar 06 04:12 CET
+"EmptyTree.DeleteNode_NonExistentElement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/55 Testing: EmptyTree.FindNode_NonExistentElement
+3/55 Test: EmptyTree.FindNode_NonExistentElement
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=EmptyTree.FindNode_NonExistentElement" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTree.FindNode_NonExistentElement" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTree.FindNode_NonExistentElement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTree
+[ RUN      ] EmptyTree.FindNode_NonExistentElement
+[       OK ] EmptyTree.FindNode_NonExistentElement (0 ms)
+[----------] 1 test from EmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTree.FindNode_NonExistentElement" end time: Mar 06 04:12 CET
+"EmptyTree.FindNode_NonExistentElement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+4/55 Testing: NonEmptyTree.InsertNode_MultipleElements
+4/55 Test: NonEmptyTree.InsertNode_MultipleElements
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=NonEmptyTree.InsertNode_MultipleElements" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTree.InsertNode_MultipleElements" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTree.InsertNode_MultipleElements
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTree
+[ RUN      ] NonEmptyTree.InsertNode_MultipleElements
+[       OK ] NonEmptyTree.InsertNode_MultipleElements (0 ms)
+[----------] 1 test from NonEmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTree.InsertNode_MultipleElements" end time: Mar 06 04:12 CET
+"NonEmptyTree.InsertNode_MultipleElements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/55 Testing: NonEmptyTree.DeleteNode_ExistingElement
+5/55 Test: NonEmptyTree.DeleteNode_ExistingElement
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=NonEmptyTree.DeleteNode_ExistingElement" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTree.DeleteNode_ExistingElement" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTree.DeleteNode_ExistingElement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTree
+[ RUN      ] NonEmptyTree.DeleteNode_ExistingElement
+[       OK ] NonEmptyTree.DeleteNode_ExistingElement (0 ms)
+[----------] 1 test from NonEmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTree.DeleteNode_ExistingElement" end time: Mar 06 04:12 CET
+"NonEmptyTree.DeleteNode_ExistingElement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/55 Testing: NonEmptyTree.FindNode_ExistingElement
+6/55 Test: NonEmptyTree.FindNode_ExistingElement
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=NonEmptyTree.FindNode_ExistingElement" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTree.FindNode_ExistingElement" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTree.FindNode_ExistingElement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTree
+[ RUN      ] NonEmptyTree.FindNode_ExistingElement
+[       OK ] NonEmptyTree.FindNode_ExistingElement (0 ms)
+[----------] 1 test from NonEmptyTree (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTree.FindNode_ExistingElement" end time: Mar 06 04:12 CET
+"NonEmptyTree.FindNode_ExistingElement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/55 Testing: TreeAxioms.Axiom1_AllLeavesAreBlack
+7/55 Test: TreeAxioms.Axiom1_AllLeavesAreBlack
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=TreeAxioms.Axiom1_AllLeavesAreBlack" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"TreeAxioms.Axiom1_AllLeavesAreBlack" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TreeAxioms.Axiom1_AllLeavesAreBlack
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TreeAxioms
+[ RUN      ] TreeAxioms.Axiom1_AllLeavesAreBlack
+[       OK ] TreeAxioms.Axiom1_AllLeavesAreBlack (0 ms)
+[----------] 1 test from TreeAxioms (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TreeAxioms.Axiom1_AllLeavesAreBlack" end time: Mar 06 04:12 CET
+"TreeAxioms.Axiom1_AllLeavesAreBlack" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/55 Testing: TreeAxioms.Axiom2_RedNodeHasBlackChildren
+8/55 Test: TreeAxioms.Axiom2_RedNodeHasBlackChildren
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=TreeAxioms.Axiom2_RedNodeHasBlackChildren" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"TreeAxioms.Axiom2_RedNodeHasBlackChildren" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TreeAxioms.Axiom2_RedNodeHasBlackChildren
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TreeAxioms
+[ RUN      ] TreeAxioms.Axiom2_RedNodeHasBlackChildren
+[       OK ] TreeAxioms.Axiom2_RedNodeHasBlackChildren (0 ms)
+[----------] 1 test from TreeAxioms (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TreeAxioms.Axiom2_RedNodeHasBlackChildren" end time: Mar 06 04:12 CET
+"TreeAxioms.Axiom2_RedNodeHasBlackChildren" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/55 Testing: TreeAxioms.Axiom3_BlackHeightIsConsistent
+9/55 Test: TreeAxioms.Axiom3_BlackHeightIsConsistent
+Command: "/home/hanka/Plocha/ivs_project_1/build/black_box_test" "--gtest_filter=TreeAxioms.Axiom3_BlackHeightIsConsistent" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"TreeAxioms.Axiom3_BlackHeightIsConsistent" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = TreeAxioms.Axiom3_BlackHeightIsConsistent
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from TreeAxioms
+[ RUN      ] TreeAxioms.Axiom3_BlackHeightIsConsistent
+[       OK ] TreeAxioms.Axiom3_BlackHeightIsConsistent (0 ms)
+[----------] 1 test from TreeAxioms (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"TreeAxioms.Axiom3_BlackHeightIsConsistent" end time: Mar 06 04:12 CET
+"TreeAxioms.Axiom3_BlackHeightIsConsistent" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/55 Testing: EmptyTable.CreateAndDestroy
+10/55 Test: EmptyTable.CreateAndDestroy
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=EmptyTable.CreateAndDestroy" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTable.CreateAndDestroy" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTable.CreateAndDestroy
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTable
+[ RUN      ] EmptyTable.CreateAndDestroy
+[       OK ] EmptyTable.CreateAndDestroy (0 ms)
+[----------] 1 test from EmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTable.CreateAndDestroy" end time: Mar 06 04:12 CET
+"EmptyTable.CreateAndDestroy" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/55 Testing: EmptyTable.InsertSingleElement
+11/55 Test: EmptyTable.InsertSingleElement
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=EmptyTable.InsertSingleElement" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTable.InsertSingleElement" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTable.InsertSingleElement
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTable
+[ RUN      ] EmptyTable.InsertSingleElement
+[       OK ] EmptyTable.InsertSingleElement (0 ms)
+[----------] 1 test from EmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTable.InsertSingleElement" end time: Mar 06 04:12 CET
+"EmptyTable.InsertSingleElement" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/55 Testing: EmptyTable.RetrieveFromEmpty
+12/55 Test: EmptyTable.RetrieveFromEmpty
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=EmptyTable.RetrieveFromEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTable.RetrieveFromEmpty" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTable.RetrieveFromEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTable
+[ RUN      ] EmptyTable.RetrieveFromEmpty
+[       OK ] EmptyTable.RetrieveFromEmpty (0 ms)
+[----------] 1 test from EmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTable.RetrieveFromEmpty" end time: Mar 06 04:12 CET
+"EmptyTable.RetrieveFromEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/55 Testing: EmptyTable.RemoveFromEmpty
+13/55 Test: EmptyTable.RemoveFromEmpty
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=EmptyTable.RemoveFromEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTable.RemoveFromEmpty" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTable.RemoveFromEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTable
+[ RUN      ] EmptyTable.RemoveFromEmpty
+[       OK ] EmptyTable.RemoveFromEmpty (0 ms)
+[----------] 1 test from EmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTable.RemoveFromEmpty" end time: Mar 06 04:12 CET
+"EmptyTable.RemoveFromEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/55 Testing: EmptyTable.ContainsEmpty
+14/55 Test: EmptyTable.ContainsEmpty
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=EmptyTable.ContainsEmpty" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyTable.ContainsEmpty" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyTable.ContainsEmpty
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyTable
+[ RUN      ] EmptyTable.ContainsEmpty
+[       OK ] EmptyTable.ContainsEmpty (0 ms)
+[----------] 1 test from EmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyTable.ContainsEmpty" end time: Mar 06 04:12 CET
+"EmptyTable.ContainsEmpty" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/55 Testing: NonEmptyTable.InsertAndRetrieve
+15/55 Test: NonEmptyTable.InsertAndRetrieve
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.InsertAndRetrieve" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.InsertAndRetrieve" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.InsertAndRetrieve
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.InsertAndRetrieve
+[       OK ] NonEmptyTable.InsertAndRetrieve (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.InsertAndRetrieve" end time: Mar 06 04:12 CET
+"NonEmptyTable.InsertAndRetrieve" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/55 Testing: NonEmptyTable.UpdateExistingKey
+16/55 Test: NonEmptyTable.UpdateExistingKey
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.UpdateExistingKey" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.UpdateExistingKey" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.UpdateExistingKey
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.UpdateExistingKey
+[       OK ] NonEmptyTable.UpdateExistingKey (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.UpdateExistingKey" end time: Mar 06 04:12 CET
+"NonEmptyTable.UpdateExistingKey" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/55 Testing: NonEmptyTable.RemoveKey
+17/55 Test: NonEmptyTable.RemoveKey
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.RemoveKey" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.RemoveKey" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.RemoveKey
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.RemoveKey
+[       OK ] NonEmptyTable.RemoveKey (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.RemoveKey" end time: Mar 06 04:12 CET
+"NonEmptyTable.RemoveKey" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/55 Testing: NonEmptyTable.ContainsKey
+18/55 Test: NonEmptyTable.ContainsKey
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.ContainsKey" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.ContainsKey" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.ContainsKey
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.ContainsKey
+[       OK ] NonEmptyTable.ContainsKey (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.ContainsKey" end time: Mar 06 04:12 CET
+"NonEmptyTable.ContainsKey" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/55 Testing: NonEmptyTable.HandleCollisions
+19/55 Test: NonEmptyTable.HandleCollisions
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.HandleCollisions" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.HandleCollisions" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.HandleCollisions
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.HandleCollisions
+[       OK ] NonEmptyTable.HandleCollisions (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.HandleCollisions" end time: Mar 06 04:12 CET
+"NonEmptyTable.HandleCollisions" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/55 Testing: NonEmptyTable.ClearTable
+20/55 Test: NonEmptyTable.ClearTable
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.ClearTable" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.ClearTable" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.ClearTable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.ClearTable
+[       OK ] NonEmptyTable.ClearTable (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.ClearTable" end time: Mar 06 04:12 CET
+"NonEmptyTable.ClearTable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/55 Testing: NonEmptyTable.PopElements
+21/55 Test: NonEmptyTable.PopElements
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.PopElements" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.PopElements" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.PopElements
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.PopElements
+[       OK ] NonEmptyTable.PopElements (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyTable.PopElements" end time: Mar 06 04:12 CET
+"NonEmptyTable.PopElements" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/55 Testing: NonEmptyTable.ResizeTable
+22/55 Test: NonEmptyTable.ResizeTable
+Command: "/home/hanka/Plocha/ivs_project_1/build/white_box_test" "--gtest_filter=NonEmptyTable.ResizeTable" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyTable.ResizeTable" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyTable.ResizeTable
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyTable
+[ RUN      ] NonEmptyTable.ResizeTable
+/home/hanka/Plocha/ivs_project_1/white_box_tests.cpp:234: Failure
+Expected equality of these values:
+  hash_map_get(map, keys[i].c_str(), &value)
+    Which is: 3
+  OK
+    Which is: 0
+/home/hanka/Plocha/ivs_project_1/white_box_tests.cpp:235: Failure
+Expected equality of these values:
+  value
+    Which is: 0
+  i
+    Which is: 1
+/home/hanka/Plocha/ivs_project_1/white_box_tests.cpp:234: Failure
+Expected equality of these values:
+  hash_map_get(map, keys[i].c_str(), &value)
+    Which is: 3
+  OK
+    Which is: 0
+/home/hanka/Plocha/ivs_project_1/white_box_tests.cpp:235: Failure
+Expected equality of these values:
+  value
+    Which is: 0
+  i
+    Which is: 2
+/home/hanka/Plocha/ivs_project_1/white_box_tests.cpp:234: Failure
+Expected equality of these values:
+  hash_map_get(map, keys[i].c_str(), &value)
+    Which is: 3
+  OK
+    Which is: 0
+/home/hanka/Plocha/ivs_project_1/white_box_tests.cpp:235: Failure
+Expected equality of these values:
+  value
+    Which is: 0
+  i
+    Which is: 3
+[  FAILED  ] NonEmptyTable.ResizeTable (0 ms)
+[----------] 1 test from NonEmptyTable (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 0 tests.
+[  FAILED  ] 1 test, listed below:
+[  FAILED  ] NonEmptyTable.ResizeTable
+
+ 1 FAILED TEST
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Failed.
+"NonEmptyTable.ResizeTable" end time: Mar 06 04:12 CET
+"NonEmptyTable.ResizeTable" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/55 Testing: NonEmptyGraph.nodes
+23/55 Test: NonEmptyGraph.nodes
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.nodes" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.nodes" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.nodes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.nodes
+[       OK ] NonEmptyGraph.nodes (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.nodes" end time: Mar 06 04:12 CET
+"NonEmptyGraph.nodes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/55 Testing: NonEmptyGraph.edges
+24/55 Test: NonEmptyGraph.edges
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.edges" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.edges" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.edges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.edges
+[       OK ] NonEmptyGraph.edges (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.edges" end time: Mar 06 04:12 CET
+"NonEmptyGraph.edges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/55 Testing: NonEmptyGraph.addNode
+25/55 Test: NonEmptyGraph.addNode
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.addNode" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.addNode" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.addNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.addNode
+[       OK ] NonEmptyGraph.addNode (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.addNode" end time: Mar 06 04:12 CET
+"NonEmptyGraph.addNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/55 Testing: NonEmptyGraph.addEdge
+26/55 Test: NonEmptyGraph.addEdge
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.addEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.addEdge" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.addEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.addEdge
+[       OK ] NonEmptyGraph.addEdge (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.addEdge" end time: Mar 06 04:12 CET
+"NonEmptyGraph.addEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/55 Testing: NonEmptyGraph.addMultipleEdges
+27/55 Test: NonEmptyGraph.addMultipleEdges
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.addMultipleEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.addMultipleEdges" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.addMultipleEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.addMultipleEdges
+[       OK ] NonEmptyGraph.addMultipleEdges (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.addMultipleEdges" end time: Mar 06 04:12 CET
+"NonEmptyGraph.addMultipleEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/55 Testing: NonEmptyGraph.getNode
+28/55 Test: NonEmptyGraph.getNode
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.getNode" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.getNode" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.getNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.getNode
+[       OK ] NonEmptyGraph.getNode (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.getNode" end time: Mar 06 04:12 CET
+"NonEmptyGraph.getNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/55 Testing: NonEmptyGraph.containsEdge
+29/55 Test: NonEmptyGraph.containsEdge
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.containsEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.containsEdge" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.containsEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.containsEdge
+[       OK ] NonEmptyGraph.containsEdge (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.containsEdge" end time: Mar 06 04:12 CET
+"NonEmptyGraph.containsEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/55 Testing: NonEmptyGraph.removeNode
+30/55 Test: NonEmptyGraph.removeNode
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.removeNode" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.removeNode" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.removeNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.removeNode
+[       OK ] NonEmptyGraph.removeNode (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.removeNode" end time: Mar 06 04:12 CET
+"NonEmptyGraph.removeNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/55 Testing: NonEmptyGraph.removeEdge
+31/55 Test: NonEmptyGraph.removeEdge
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.removeEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.removeEdge" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.removeEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.removeEdge
+[       OK ] NonEmptyGraph.removeEdge (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.removeEdge" end time: Mar 06 04:12 CET
+"NonEmptyGraph.removeEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/55 Testing: NonEmptyGraph.nodeCount
+32/55 Test: NonEmptyGraph.nodeCount
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.nodeCount" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.nodeCount" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.nodeCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.nodeCount
+[       OK ] NonEmptyGraph.nodeCount (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.nodeCount" end time: Mar 06 04:12 CET
+"NonEmptyGraph.nodeCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+33/55 Testing: NonEmptyGraph.edgeCount
+33/55 Test: NonEmptyGraph.edgeCount
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.edgeCount" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.edgeCount" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.edgeCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.edgeCount
+[       OK ] NonEmptyGraph.edgeCount (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.edgeCount" end time: Mar 06 04:12 CET
+"NonEmptyGraph.edgeCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+34/55 Testing: NonEmptyGraph.nodeDegree
+34/55 Test: NonEmptyGraph.nodeDegree
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.nodeDegree" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.nodeDegree" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.nodeDegree
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.nodeDegree
+[       OK ] NonEmptyGraph.nodeDegree (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.nodeDegree" end time: Mar 06 04:12 CET
+"NonEmptyGraph.nodeDegree" time elapsed: 00:00:00
+----------------------------------------------------------
+
+35/55 Testing: NonEmptyGraph.graphDegree
+35/55 Test: NonEmptyGraph.graphDegree
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.graphDegree" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.graphDegree" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.graphDegree
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.graphDegree
+[       OK ] NonEmptyGraph.graphDegree (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.graphDegree" end time: Mar 06 04:12 CET
+"NonEmptyGraph.graphDegree" time elapsed: 00:00:00
+----------------------------------------------------------
+
+36/55 Testing: NonEmptyGraph.coloring
+36/55 Test: NonEmptyGraph.coloring
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.coloring" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.coloring" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.coloring
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.coloring
+[       OK ] NonEmptyGraph.coloring (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.coloring" end time: Mar 06 04:12 CET
+"NonEmptyGraph.coloring" time elapsed: 00:00:00
+----------------------------------------------------------
+
+37/55 Testing: NonEmptyGraph.clear
+37/55 Test: NonEmptyGraph.clear
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=NonEmptyGraph.clear" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"NonEmptyGraph.clear" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = NonEmptyGraph.clear
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from NonEmptyGraph
+[ RUN      ] NonEmptyGraph.clear
+[       OK ] NonEmptyGraph.clear (0 ms)
+[----------] 1 test from NonEmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"NonEmptyGraph.clear" end time: Mar 06 04:12 CET
+"NonEmptyGraph.clear" time elapsed: 00:00:00
+----------------------------------------------------------
+
+38/55 Testing: EmptyGraph.nodes
+38/55 Test: EmptyGraph.nodes
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.nodes" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.nodes" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.nodes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.nodes
+[       OK ] EmptyGraph.nodes (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.nodes" end time: Mar 06 04:12 CET
+"EmptyGraph.nodes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+39/55 Testing: EmptyGraph.edges
+39/55 Test: EmptyGraph.edges
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.edges" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.edges" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.edges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.edges
+[       OK ] EmptyGraph.edges (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.edges" end time: Mar 06 04:12 CET
+"EmptyGraph.edges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+40/55 Testing: EmptyGraph.addNode
+40/55 Test: EmptyGraph.addNode
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.addNode" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.addNode" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.addNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.addNode
+[       OK ] EmptyGraph.addNode (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.addNode" end time: Mar 06 04:12 CET
+"EmptyGraph.addNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+41/55 Testing: EmptyGraph.addEdge
+41/55 Test: EmptyGraph.addEdge
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.addEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.addEdge" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.addEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.addEdge
+[       OK ] EmptyGraph.addEdge (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.addEdge" end time: Mar 06 04:12 CET
+"EmptyGraph.addEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+42/55 Testing: EmptyGraph.addMultipleEdges
+42/55 Test: EmptyGraph.addMultipleEdges
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.addMultipleEdges" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.addMultipleEdges" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.addMultipleEdges
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.addMultipleEdges
+[       OK ] EmptyGraph.addMultipleEdges (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.addMultipleEdges" end time: Mar 06 04:12 CET
+"EmptyGraph.addMultipleEdges" time elapsed: 00:00:00
+----------------------------------------------------------
+
+43/55 Testing: EmptyGraph.getNode
+43/55 Test: EmptyGraph.getNode
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.getNode" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.getNode" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.getNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.getNode
+[       OK ] EmptyGraph.getNode (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.getNode" end time: Mar 06 04:12 CET
+"EmptyGraph.getNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+44/55 Testing: EmptyGraph.containsEdge
+44/55 Test: EmptyGraph.containsEdge
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.containsEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.containsEdge" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.containsEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.containsEdge
+[       OK ] EmptyGraph.containsEdge (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.containsEdge" end time: Mar 06 04:12 CET
+"EmptyGraph.containsEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+45/55 Testing: EmptyGraph.removeNode
+45/55 Test: EmptyGraph.removeNode
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.removeNode" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.removeNode" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.removeNode
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.removeNode
+[       OK ] EmptyGraph.removeNode (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.removeNode" end time: Mar 06 04:12 CET
+"EmptyGraph.removeNode" time elapsed: 00:00:00
+----------------------------------------------------------
+
+46/55 Testing: EmptyGraph.removeEdge
+46/55 Test: EmptyGraph.removeEdge
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.removeEdge" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.removeEdge" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.removeEdge
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.removeEdge
+[       OK ] EmptyGraph.removeEdge (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.removeEdge" end time: Mar 06 04:12 CET
+"EmptyGraph.removeEdge" time elapsed: 00:00:00
+----------------------------------------------------------
+
+47/55 Testing: EmptyGraph.nodeCount
+47/55 Test: EmptyGraph.nodeCount
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.nodeCount" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.nodeCount" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.nodeCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.nodeCount
+[       OK ] EmptyGraph.nodeCount (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.nodeCount" end time: Mar 06 04:12 CET
+"EmptyGraph.nodeCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+48/55 Testing: EmptyGraph.edgeCount
+48/55 Test: EmptyGraph.edgeCount
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.edgeCount" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.edgeCount" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.edgeCount
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.edgeCount
+[       OK ] EmptyGraph.edgeCount (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.edgeCount" end time: Mar 06 04:12 CET
+"EmptyGraph.edgeCount" time elapsed: 00:00:00
+----------------------------------------------------------
+
+49/55 Testing: EmptyGraph.nodeDegree
+49/55 Test: EmptyGraph.nodeDegree
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.nodeDegree" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.nodeDegree" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.nodeDegree
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.nodeDegree
+[       OK ] EmptyGraph.nodeDegree (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.nodeDegree" end time: Mar 06 04:12 CET
+"EmptyGraph.nodeDegree" time elapsed: 00:00:00
+----------------------------------------------------------
+
+50/55 Testing: EmptyGraph.graphDegree
+50/55 Test: EmptyGraph.graphDegree
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.graphDegree" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.graphDegree" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.graphDegree
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.graphDegree
+[       OK ] EmptyGraph.graphDegree (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.graphDegree" end time: Mar 06 04:12 CET
+"EmptyGraph.graphDegree" time elapsed: 00:00:00
+----------------------------------------------------------
+
+51/55 Testing: EmptyGraph.coloring
+51/55 Test: EmptyGraph.coloring
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.coloring" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.coloring" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.coloring
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.coloring
+[       OK ] EmptyGraph.coloring (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.coloring" end time: Mar 06 04:12 CET
+"EmptyGraph.coloring" time elapsed: 00:00:00
+----------------------------------------------------------
+
+52/55 Testing: EmptyGraph.clear
+52/55 Test: EmptyGraph.clear
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=EmptyGraph.clear" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"EmptyGraph.clear" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = EmptyGraph.clear
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from EmptyGraph
+[ RUN      ] EmptyGraph.clear
+[       OK ] EmptyGraph.clear (0 ms)
+[----------] 1 test from EmptyGraph (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"EmptyGraph.clear" end time: Mar 06 04:12 CET
+"EmptyGraph.clear" time elapsed: 00:00:00
+----------------------------------------------------------
+
+53/55 Testing: Edges.equal
+53/55 Test: Edges.equal
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=Edges.equal" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"Edges.equal" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Edges.equal
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Edges
+[ RUN      ] Edges.equal
+[       OK ] Edges.equal (0 ms)
+[----------] 1 test from Edges (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Edges.equal" end time: Mar 06 04:12 CET
+"Edges.equal" time elapsed: 00:00:00
+----------------------------------------------------------
+
+54/55 Testing: Edges.nonEqual
+54/55 Test: Edges.nonEqual
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=Edges.nonEqual" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"Edges.nonEqual" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Edges.nonEqual
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Edges
+[ RUN      ] Edges.nonEqual
+[       OK ] Edges.nonEqual (0 ms)
+[----------] 1 test from Edges (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Edges.nonEqual" end time: Mar 06 04:12 CET
+"Edges.nonEqual" time elapsed: 00:00:00
+----------------------------------------------------------
+
+55/55 Testing: Edges.toStringStream
+55/55 Test: Edges.toStringStream
+Command: "/home/hanka/Plocha/ivs_project_1/build/tdd_test" "--gtest_filter=Edges.toStringStream" "--gtest_also_run_disabled_tests"
+Directory: /home/hanka/Plocha/ivs_project_1/build
+"Edges.toStringStream" start time: Mar 06 04:12 CET
+Output:
+----------------------------------------------------------
+Running main() from /home/hanka/Plocha/ivs_project_1/build/_deps/googletest-src/googletest/src/gtest_main.cc
+Note: Google Test filter = Edges.toStringStream
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from Edges
+[ RUN      ] Edges.toStringStream
+[       OK ] Edges.toStringStream (0 ms)
+[----------] 1 test from Edges (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"Edges.toStringStream" end time: Mar 06 04:12 CET
+"Edges.toStringStream" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 06 04:12 CET

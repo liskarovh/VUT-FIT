@@ -1,0 +1,5 @@
+if(EXISTS "/home/hanka/Plocha/ivs_project_1/build/tdd_test[1]_tests.cmake")
+  include("/home/hanka/Plocha/ivs_project_1/build/tdd_test[1]_tests.cmake")
+else()
+  add_test(tdd_test_NOT_BUILT tdd_test_NOT_BUILT)
+endif()
