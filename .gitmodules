@@ -11,3 +11,6 @@
 	path = 4. Semestr/IVS/2/calculator
 	url = https://github.com/petrvitula/ivs_project.git
 
+[submodule "3.  Semestr/IFJ"]
+	path = 3.  Semestr/IFJ
+	url = https://github.com/Kaciis/ifj-projekt.git
