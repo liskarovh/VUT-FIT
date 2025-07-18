@@ -1,5 +1,5 @@
-[submodule "3. Semestr/IFJ_Compiler"]
-	path = 3. Semestr/IFJ_compiler
+[submodule "3. Semestr/IFJ"]
+	path = 3. Semestr/IFJ
 	url = https://github.com/Kaciis/ifj-projekt.git
 [submodule "4. Semestr/IDS"]
 	path = 4. Semestr/IDS
