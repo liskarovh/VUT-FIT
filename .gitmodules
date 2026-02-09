@@ -14,3 +14,6 @@
 [submodule "3.  Semestr/IFJ"]
 	path = 3.  Semestr/IFJ
 	url = https://github.com/Kaciis/ifj-projekt.git
+[submodule "5. Semestr/5. Semestr/IMS"]
+	path = 5. Semestr/5. Semestr/IMS
+	url = https://github.com/g0dhelpme/IMS_project.git
