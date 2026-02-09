@@ -23,3 +23,6 @@
 [submodule "5. Semestr/IIS"]
 	path = 5. Semestr/IIS
 	url = https://github.com/liskarovh/IIS-Generic-University-Information-System.git
+[submodule "5. Semestr/ITU"]
+	path = 5. Semestr/ITU
+	url = https://github.com/liskarovh/YIQ-Idiot-s-guide-to-simple-logic.git
