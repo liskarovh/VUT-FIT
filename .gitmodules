@@ -29,3 +29,6 @@
 [submodule "5. Semestr/ISA"]
 	path = 5. Semestr/ISA
 	url = https://github.com/liskarovh/Filtrating-DNS-resolver.git
+[submodule "5. Semestr/IFJ"]
+	path = 5. Semestr/IFJ
+	url = https://github.com/liskarovh/IFJ-2025-2026-Compiler.git
