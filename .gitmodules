@@ -17,3 +17,6 @@
 [submodule "5. Semestr/5. Semestr/IMS"]
 	path = 5. Semestr/5. Semestr/IMS
 	url = https://github.com/g0dhelpme/IMS_project.git
+[submodule "5. Semestr/IMS"]
+	path = 5. Semestr/IMS
+	url = https://github.com/g0dhelpme/IMS_project.git
